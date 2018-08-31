@@ -1,0 +1,41 @@
+* {
+    color:rgba(255, 255, 255, 0.9);
+    font-family: Garamond;
+}
+body , html {
+    margin:0;
+    width:100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-image: url("/static/img/122.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1,h3,h4 {
+    text-align: center;
+}
+.header {
+    display: flex;
+    list-style: none;
+    font-weight: 700;
+    font-size: 130%;
+}
+.header li {
+    padding-top: 13px;
+}
+.right li {
+    display: block;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.right{
+    justify-content: right;
+    margin-left: auto;
+    font-size: 15px;
+}
+.right a:link {
+    text-decoration: none;
+}
