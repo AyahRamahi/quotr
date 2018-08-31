@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <head>
+        <title>signup</title>
+        <link rel="stylesheet" href="/static/styles/signup.css">
+    </head>
+    <body>
+        
+        <form action="{{ url_for('signup') }}" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button>Sign up</button>
+            {% if error %}
+                <h5>Username is taken</h5>
+            {% endif %}
+        </form>
+        <h3><a href="/login">Already a member?</a></h3>
+    </body>
+</html>
