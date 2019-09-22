@@ -18,8 +18,7 @@ app.config["SESSION_PERMANENT"] = False
 Session(app)
 # setting up SQLAlcehmy engine
 # an engine is an object created by SQLAlchemy to take care of interacting with the database
-engine = create_engine(os.getenv("postgres://vjdmhspaeeftpn:ab231d6947725943e650f2f443637430a643f62292e00b39f9d4eb984f4a53ab@ec2-54-221-237-246.compute-1.amazonaws.com:5432/d9jrqdh13jlpkn
-"))
+engine = create_engine(os.getenv())
 # creates different sessions for different users
 db = scoped_session(sessionmaker(bind=engine))
 
