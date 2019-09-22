@@ -21,8 +21,6 @@ All requirements are in a file called **requirements.txt**, to download them all
 ## Database
 I have used Heroku free account to create a Postgresql database. To run this application you should provide a link to a database you have by putting the link in "DATABASE_URL" environment variable before running the program.
 
-## Contributing
-Pull requests are welcome.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
